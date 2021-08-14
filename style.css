@@ -1,0 +1,521 @@
+/* 
+    I declare that this assignment is my own work in accordance with
+ *  Seneca Academic Policy. No part of this assignment has been
+ *  copied manually or electronically from any other source
+ *  (including web sites) or distributed to other students.
+ *
+ * 
+ *
+ *      Name: Meshvi Piyush Patel
+ *      Student ID: 129827200
+ *      Date: 2021-08-13
+		
+*/
+
+@import url('https://fonts.google.com/specimen/Amatic+SC?query=Cyreal#glyphs');
+.alternate-bg {
+  background-color: #f0ffffc0;
+}
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ion-icon {
+  font-size: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+  color: #f1ecff;
+}
+
+#D1{
+	border:2px solid;
+	border-color: white;
+	padding:15px;
+	margin:30px;
+
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+body {
+	background-color: #f38ba0;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	line-height: 1.2;
+	font-size: 1rem;
+	scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+	width: 8px;
+  }
+  body::-webkit-scrollbar-thumb {
+	background-color: black;
+	border-radius: .085rem;
+  }
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  font-family:'Amatic SC', cursive;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn.btn-curve {
+  border-radius: 0.5rem;
+}
+.btn.btn-primary {
+  background-color: #black;
+  color: white;
+}
+.btn.btn-light {
+  background-color: white;
+  color: #8400ff;
+}
+.btn.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+.btn.btn-sm.btn-curve {
+  border-radius: 0.25rem;
+}
+
+.btn-hover:hover{
+  background-color: blue;
+  color: white;
+}
+
+.form-1 {
+  margin-bottom: 0.600rem;
+}
+#name {
+  display: flex;
+  width: 50%;
+  color: black;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+#email {
+	color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#address {
+	color: black;
+  font-size: 0.875rem;
+}
+#postal{
+	color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ct{
+	color:black;
+}
+#hiring{
+	color:black;
+}
+#commentbox{
+	color:black;
+}
+
+.contact-me{
+border:5px solid;
+	border-color: white;
+	padding:10px;
+	margin:30px;
+	font-size:20px;
+	color:black;
+	
+}
+@media (min-width: 768px) {
+	.container {
+	  max-width: 750px;
+	}
+  }
+  @media (min-width: 992px) {
+	.container {
+	  max-width: 970px;
+	}
+  }
+  @media (min-width: 1200px) {
+	.container {
+	  max-width: 1170px;
+	}
+  }
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+    
+  }
+  .row > div {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .col-7 {
+    flex: 7;
+  }
+
+  .col-5 {
+    flex: 5;
+  }
+
+  .BI{
+    flex: 6;
+	
+	
+  }
+  .text-yellow-300{
+	  color: #5eaaa8;
+
+  }.text-yellow-301{
+	  color: #5eaaa8;
+
+  }
+  .text-yellow-302{
+	  color: #2f5d62;
+
+  }
+  #ED1{
+	  
+	  font-size: 30px;
+  }
+
+  .col-12 {
+    flex: 12;
+  }
+}
+.toast {
+  min-width: 256px;
+  bottom: 32px;
+  border-radius: 0.25rem;
+  background-color: white;
+  box-shadow: 0 5px 24px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  font-size: 0.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.toast.show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 3.5s;
+  animation: fadeIn 0.5s, fadeOut 0.5s 3.5s;
+}
+.toast.toast-danger {
+  background-color: #ff4a4a;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 32px;
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    bottom: 32px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+.date{
+  text-align: left !important;
+}
+.honesty{
+  color: #2e0069;
+  font-family: 
+}
+.table{
+  text-align: left !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  font-weight: 600;
+}
+td{
+  padding: 5px;
+}
+
+#ft{
+	color:black;
+}
+.col-color{
+  background-color: black !important;
+  color:white;
+}
+#sub{
+	color:black;
+}
+section.education .education-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.education .education-card {
+  flex: 1;
+  width: 800px;
+  
+  margin: 0.5rem 1rem;
+  background-color:#f0ffff;
+  border-radius: 0.25rem;
+  text-align: left;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+}
+section.education .education-card h4 {
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #858b95;
+}
+section.education .education-card h3 {
+  margin: 1rem 0 0.5rem 0;
+}
+section.education .education-card p {
+  font-size: 0.875rem;
+}
+
+section.contact-me form {
+  margin: auto;
+  max-width: 724px;
+  text-align: left;
+  
+}
+section.contact-me .social-icons .social {
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #22242a;
+  margin: 0 0.5rem;
+}
+section.contact-me .social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.me .social-icons .social ion-icon {
+  font-size: 1.25rem;
+}
+section .header {
+	margin-bottom: 1.5rem;
+  }
+  section .header h2 {
+	margin-bottom: 0.5rem;
+  }
+  section .header p {
+	color: #858b95;
+	font-size: 0.875rem;
+  }
+  section p {
+	line-height: 1.5;
+	color: #c7cdd8;
+  }
+  
+  section.me {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  section.me .container {
+	text-align: center;
+  }
+  section.me img.profile {
+	max-height: 324px;
+	max-width: 324px;
+	border-radius: 0.25rem;
+  }
+  section.me h1 {
+	margin: 1.5rem auto 1rem auto;
+	font-size: 1.75rem;
+  }
+  section.me .actions {
+	margin-top: 2.5rem;
+  }
+  section.me .social-icons {
+	margin-top: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  section.me .social-icons .social {
+	height: 42px;
+	width: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #22242a;
+	margin: 0 0.5rem;
+  }
+  section.me .social-icons .social ion-icon {
+	font-size: 1.25rem;
+  }
+.container1{
+	
+	border:5px solid;
+	border-color: white;
+	padding:10px;
+	margin:30px;
+}.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+   font-family: 'Amatic SC', cursive;
+   color:black;
+}
+
+.text-muted {
+  color: #859594;
+}
+
+.font-size-sm {
+  font-size: 0.875rem !important;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+.ct{
+color:black;	
+}
+.qt{
+	color:black;
+}.ht{
+}.ht1{
+	color:black;
+}
+
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.my-1 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-75 {
+  margin-bottom: 0.75rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+  color: black;
+}
+
+.mr-50 {
+  margin-right: 0.5rem;
+}
+
+.ml-50 {
+  margin-left: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.section-gap {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+#SD{
+	font-size:20px;
+	color:black;
+	font-family: 'Amatic SC', cursive;
+}
